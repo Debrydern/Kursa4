@@ -1,0 +1,13 @@
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Staff.exe.config
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Staff.exe
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Staff.pdb
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.csprojAssemblyReference.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.Main.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.Properties.Resources.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.csproj.GenerateResource.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.csproj.CoreCompileInputs.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.exe
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.pdb
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Database.mdf
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Database_log.ldf
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.Create.resources
