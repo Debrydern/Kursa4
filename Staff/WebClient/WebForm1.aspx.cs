@@ -28,7 +28,15 @@ namespace WebClient
         {
             var _id = int.Parse(TextBox3.Text);
             var client = new ServiceReference1.HostService1Client("BasicHttpBinding_IHostService1");
-            TextBox4.Text = client.GetRowById(_id);             
+            try
+            {
+                TextBox4.Text = client.GetRowById(_id).First_name + " " + client.GetRowById(_id).Last_name + " " +
+                    client.GetRowById(_id).Patronic_name +" "+ client.GetRowById(_id).Birthday.ToShortDateString();
+            }
+            catch (Exception err)
+            {
+                TextBox4.Text = err.Message;
+            }
             client.Close();
         }
     }

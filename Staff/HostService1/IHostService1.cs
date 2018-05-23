@@ -13,9 +13,22 @@ namespace HostService
     public interface IHostService1
     {
         [OperationContract]
-        int Summator( int a, int b);
+        int Summator(int a, int b);
 
         [OperationContract]
-        string GetRowById(int id); 
+        GetShortInfo GetRowById(int id);
+    }
+
+    [DataContract]
+    public struct GetShortInfo
+    {
+        [DataMember] public string Last_name;
+        [DataMember] public string First_name;
+        [DataMember] public string Patronic_name;
+        [DataMember] public DateTime Birthday;
+        [DataMember] public int Age;
+        [DataMember] public string Department;
+        [DataMember] public string Post;
+
     }
 }

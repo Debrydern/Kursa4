@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.ServiceModel;
-using System.Text;
+using System.Data;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
 
 namespace HostConsole
@@ -11,6 +12,7 @@ namespace HostConsole
         static void Main(string[] args)
         {
             StartHost();
+            
         }
 
         public static void StartHost()
@@ -26,7 +28,6 @@ namespace HostConsole
                     b = Console.ReadKey();
                 }
                 while (b.Key != ConsoleKey.Q);
-
                 
                 host.Close();
             }

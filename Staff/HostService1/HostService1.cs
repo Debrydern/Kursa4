@@ -17,10 +17,10 @@ namespace HostService
             return a + b;
         }
 
-        public string GetRowById(int id)
+        public GetShortInfo GetRowById(int id)
         {
-            try
-            {
+            GetShortInfo shortInfo = new GetShortInfo();
+            
                 //коннектимся
                 SqlConnection sqlConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\DBase\Database.mdf;Integrated Security=True");
                 sqlConn.Open();
@@ -30,17 +30,17 @@ namespace HostService
                 //результат запроса суем в таблицу
                 DataTable dt = new DataTable();
                 dt.Load(dr);
-
-                return $"{dt.Rows[0].ItemArray[0].ToString()} {dt.Rows[0].ItemArray[1].ToString()} " +
-                    $"{dt.Rows[0].ItemArray[2].ToString()} {dt.Rows[0].ItemArray[3].ToString()} {dt.Rows[0].ItemArray[4].ToString()}";
-            }
-            catch (Exception err)
-            {
-
                
-                return err.Message;
-            }
+               
+                shortInfo.First_name = dt.Rows[0].ItemArray[1].ToString();
+                shortInfo.Last_name = dt.Rows[0].ItemArray[2].ToString();
+                shortInfo.Patronic_name = dt.Rows[0].ItemArray[3].ToString();
+                shortInfo.Birthday = (DateTime)dt.Rows[0].ItemArray[4];
+                shortInfo.Age = (int)dt.Rows[0].ItemArray[5];
+                shortInfo.Department = dt.Rows[0].ItemArray[6].ToString();
+                shortInfo.Post = dt.Rows[0].ItemArray[7].ToString();
 
+                return shortInfo;           
         }
     }
 }
