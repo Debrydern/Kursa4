@@ -17,3 +17,4 @@ D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Debug\Server.csproj.CopyCompl
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\HostConsole.exe
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\HostConsole.pdb
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\HostConsole.exe.config
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Debug\Server.MainForm.resources

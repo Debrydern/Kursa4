@@ -57,6 +57,7 @@
             this.SearchBtn.TabIndex = 0;
             this.SearchBtn.Text = "Знайти анкету";
             this.SearchBtn.UseVisualStyleBackColor = true;
+            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
             // FillBtn
             // 

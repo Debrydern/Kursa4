@@ -13,10 +13,8 @@ namespace HostService
     public interface IHostService1
     {
         [OperationContract]
-        int Summator(int a, int b);
-
-        [OperationContract]
         GetShortInfo GetRowById(int id);
+        
     }
 
     [DataContract]
@@ -30,5 +28,5 @@ namespace HostService
         [DataMember] public string Department;
         [DataMember] public string Post;
 
-    }
+    }    
 }

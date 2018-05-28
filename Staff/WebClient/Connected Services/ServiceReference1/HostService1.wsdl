@@ -36,12 +36,6 @@
       <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HostService" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IHostService1_Summator_InputMessage">
-    <wsdl:part name="parameters" element="tns:Summator" />
-  </wsdl:message>
-  <wsdl:message name="IHostService1_Summator_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SummatorResponse" />
-  </wsdl:message>
   <wsdl:message name="IHostService1_GetRowById_InputMessage">
     <wsdl:part name="parameters" element="tns:GetRowById" />
   </wsdl:message>
@@ -49,10 +43,6 @@
     <wsdl:part name="parameters" element="tns:GetRowByIdResponse" />
   </wsdl:message>
   <wsdl:portType name="IHostService1">
-    <wsdl:operation name="Summator">
-      <wsdl:input wsaw:Action="http://tempuri.org/IHostService1/Summator" message="tns:IHostService1_Summator_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IHostService1/SummatorResponse" message="tns:IHostService1_Summator_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="GetRowById">
       <wsdl:input wsaw:Action="http://tempuri.org/IHostService1/GetRowById" message="tns:IHostService1_GetRowById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IHostService1/GetRowByIdResponse" message="tns:IHostService1_GetRowById_OutputMessage" />
@@ -60,15 +50,6 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IHostService1" type="tns:IHostService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Summator">
-      <soap:operation soapAction="http://tempuri.org/IHostService1/Summator" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="GetRowById">
       <soap:operation soapAction="http://tempuri.org/IHostService1/GetRowById" style="document" />
       <wsdl:input>
@@ -82,15 +63,6 @@
   <wsdl:binding name="NetTcpBinding_IHostService1" type="tns:IHostService1">
     <wsp:PolicyReference URI="#NetTcpBinding_IHostService1_policy" />
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
-    <wsdl:operation name="Summator">
-      <soap12:operation soapAction="http://tempuri.org/IHostService1/Summator" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="GetRowById">
       <soap12:operation soapAction="http://tempuri.org/IHostService1/GetRowById" style="document" />
       <wsdl:input>

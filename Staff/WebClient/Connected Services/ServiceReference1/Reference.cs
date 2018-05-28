@@ -157,12 +157,6 @@ namespace WebClient.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IHostService1")]
     public interface IHostService1 {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/Summator", ReplyAction="http://tempuri.org/IHostService1/SummatorResponse")]
-        int Summator(int a, int b);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/Summator", ReplyAction="http://tempuri.org/IHostService1/SummatorResponse")]
-        System.Threading.Tasks.Task<int> SummatorAsync(int a, int b);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/GetRowById", ReplyAction="http://tempuri.org/IHostService1/GetRowByIdResponse")]
         WebClient.ServiceReference1.GetShortInfo GetRowById(int id);
         
@@ -195,14 +189,6 @@ namespace WebClient.ServiceReference1 {
         
         public HostService1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        public int Summator(int a, int b) {
-            return base.Channel.Summator(a, b);
-        }
-        
-        public System.Threading.Tasks.Task<int> SummatorAsync(int a, int b) {
-            return base.Channel.SummatorAsync(a, b);
         }
         
         public WebClient.ServiceReference1.GetShortInfo GetRowById(int id) {

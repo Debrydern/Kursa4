@@ -22,5 +22,11 @@ namespace Staff
             var myForm = new Create();
             myForm.Show();
         }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            var myForm = new Find();
+            myForm.Show();
+        }
     }
 }

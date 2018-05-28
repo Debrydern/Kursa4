@@ -1,5 +1,3 @@
-D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Database.mdf
-D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Database_log.ldf
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Staff.exe.config
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Staff.exe
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Debug\Staff.pdb
@@ -11,3 +9,4 @@ D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Client.csproj.CoreCompil
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.exe
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.pdb
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Client.csprojAssemblyReference.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Debug\Staff.Find.resources

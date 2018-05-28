@@ -7,25 +7,15 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div id="summ">
-            <br />
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
-            <br />
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        </div>
-        <br />
+    <form id="form1" runat="server">       
         <div id="table_row">
             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             <br />
             <asp:TextBox ID="TextBox4" runat="server" Width="507px"></asp:TextBox>
             <br />
             <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
-        </div>
+        </div> 
+        <br />
     </form>
 </body>
 </html>

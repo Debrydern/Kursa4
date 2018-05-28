@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostService", "HostService1\HostService.csproj", "{C76DFF92-7D69-419B-84F8-A940699ADFCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostConsole", "HostConsole\HostConsole.csproj", "{C8351AB9-B698-4296-9460-49D48C241197}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{CE4345DE-94FB-438C-A8BE-42811FDB9F00}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{C76DFF92-7D69-419B-84F8-A940699ADFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C76DFF92-7D69-419B-84F8-A940699ADFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C76DFF92-7D69-419B-84F8-A940699ADFCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8351AB9-B698-4296-9460-49D48C241197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8351AB9-B698-4296-9460-49D48C241197}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8351AB9-B698-4296-9460-49D48C241197}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8351AB9-B698-4296-9460-49D48C241197}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE4345DE-94FB-438C-A8BE-42811FDB9F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE4345DE-94FB-438C-A8BE-42811FDB9F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE4345DE-94FB-438C-A8BE-42811FDB9F00}.Release|Any CPU.ActiveCfg = Release|Any CPU

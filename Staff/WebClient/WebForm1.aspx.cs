@@ -12,17 +12,7 @@ namespace WebClient
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            var xValue = int.Parse(TextBox1.Text);
-            var yValue = int.Parse(TextBox2.Text);
-
-            var client = new ServiceReference1.HostService1Client("BasicHttpBinding_IHostService1");
-            Label1.Text = client.Summator(xValue, yValue).ToString();
-            client.Close();
-        }
+        }       
 
         protected void Button2_Click(object sender, EventArgs e)
         {
