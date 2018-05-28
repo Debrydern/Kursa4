@@ -1,0 +1,49 @@
+﻿CREATE TABLE [Staff] (
+	Staff_Id int NOT NULL IDENTITY,
+	LastName nvarchar(50) NOT NULL,
+	FirstName nvarchar(50) NOT NULL,
+	PatronicName nvarchar(50) NOT NULL,
+	Age int NOT NULL,
+	BirthDay datetime2 NOT NULL,
+	Post_Id int NOT NULL,
+	Departament_Id int NOT NULL,
+  CONSTRAINT [PK_STAFF] PRIMARY KEY CLUSTERED
+  (
+  [Staff_Id] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Departament] (
+	Departament_Id int NOT NULL IDENTITY,
+	Name nvarchar(50) NOT NULL,
+  CONSTRAINT [PK_DEPARTAMENT] PRIMARY KEY CLUSTERED
+  (
+  [Departament_Id] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Post] (
+	Post_Id int NOT NULL IDENTITY,
+	Name nvarchar(50) NOT NULL,
+  CONSTRAINT [PK_POST] PRIMARY KEY CLUSTERED
+  (
+  [Post_Id] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+ALTER TABLE [Staff] WITH CHECK ADD CONSTRAINT [Staff_fk0] FOREIGN KEY ([Post_Id]) REFERENCES [Post]([Post_Id])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Staff] CHECK CONSTRAINT [Staff_fk0]
+GO
+ALTER TABLE [Staff] WITH CHECK ADD CONSTRAINT [Staff_fk1] FOREIGN KEY ([Departament_Id]) REFERENCES [Departament]([Departament_Id])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Staff] CHECK CONSTRAINT [Staff_fk1]
+GO
+
+
+

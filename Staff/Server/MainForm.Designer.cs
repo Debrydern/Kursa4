@@ -47,6 +47,7 @@
             // 
             // NotifyIcon1
             // 
+            this.NotifyIcon1.BalloonTipTitle = "Staff Server";
             this.NotifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("NotifyIcon1.Icon")));
             this.NotifyIcon1.Text = "Staff Server";
             this.NotifyIcon1.Visible = true;

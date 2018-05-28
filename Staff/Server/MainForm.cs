@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Server
 {
     public partial class MainForm : Form
@@ -26,6 +28,9 @@ namespace Server
                 host = new ServiceHost(typeof(HostService.HostService1));
                 host.Open();
                 consoleBox.Text = $"{DateTime.Now} -> Service started!\n";
+
+                HostService.HostService1 service1 = new HostService1();
+                GetShortInfo info = service1.GetRowById(1);
 
             }
             catch (Exception err)

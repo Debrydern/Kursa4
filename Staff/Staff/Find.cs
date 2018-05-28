@@ -19,7 +19,20 @@ namespace Staff
 
         private void FindBtn_Click(object sender, EventArgs e)
         {
-
+            int _id = 2;
+            var client = new ServiceReference1.HostService1Client("BasicHttpBinding_IHostService1");
+            try
+            {
+                FirstNameBox.Text = client.GetRowById(_id).First_name;
+                LastNameBox.Text = client.GetRowById(_id).Last_name;
+                PatronicBox.Text = client.GetRowById(_id).Patronic_name;
+                BirthdayBox.Text = client.GetRowById(_id).Birthday.ToShortDateString();
+            }
+            catch (Exception err)
+            {
+                textBox6.Text = err.Message;
+            }
+            client.Close();
         }
     }
 }

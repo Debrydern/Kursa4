@@ -51,8 +51,8 @@ D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\bin\roslyn\VBCSCompiler.exe
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\bin\roslyn\VBCSCompiler.exe.config
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\obj\Debug\WebClient.csprojAssemblyReference.cache
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\obj\Debug\WebClient.csproj.CoreCompileInputs.cache
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\obj\Debug\WebClient.csproj.CopyComplete
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\obj\Debug\WebClient.dll
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\obj\Debug\WebClient.pdb
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\WebClient\obj\Debug\WebClient.csprojAssemblyReference.cache

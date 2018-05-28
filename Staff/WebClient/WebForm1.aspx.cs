@@ -21,11 +21,11 @@ namespace WebClient
             try
             {
                 TextBox4.Text = client.GetRowById(_id).First_name + " " + client.GetRowById(_id).Last_name + " " +
-                    client.GetRowById(_id).Patronic_name +" "+ client.GetRowById(_id).Birthday.ToShortDateString();
+                    client.GetRowById(_id).Patronic_name +" "+ client.GetRowById(_id).Birthday;
             }
             catch (Exception err)
             {
-                TextBox4.Text = err.Message;
+                TextBox4.Text = err.Message + "                   "+err.StackTrace;
             }
             client.Close();
         }
