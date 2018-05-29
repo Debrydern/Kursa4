@@ -1,5 +1,3 @@
-D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\DBase\Database.mdf
-D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\DBase\Database_log.ldf
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\Server.exe.config
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\Server.exe
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\Server.pdb

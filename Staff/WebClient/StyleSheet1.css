@@ -1,0 +1,15 @@
+﻿body {
+}
+
+#table1 {
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+    #table1 th {
+        width: 200px;
+    }
+
+    #table1 th, td {
+        border: 1px solid grey;
+    }

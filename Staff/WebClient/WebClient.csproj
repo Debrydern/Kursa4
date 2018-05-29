@@ -44,6 +44,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HostService1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -82,6 +83,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="logo.ico" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Web.config" />
     <None Include="Connected Services\ServiceReference1\item.xsd">
@@ -107,10 +109,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connected Services\ServiceReference1\WebClient.ServiceReference1.GetShortInfo.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <None Include="packages.config" />
+    <Content Include="Properties\DataSources\HostService.GetShortInfo.datasource" />
+    <Content Include="Properties\DataSources\HostService.GetShortInfo1.datasource" />
+    <Content Include="Properties\DataSources\HostService.GetShortInfo2.datasource" />
+    <Content Include="Properties\DataSources\HostService.GetShortInfo3.datasource" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -123,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HostService1\HostService.csproj">
+      <Project>{c76dff92-7d69-419b-84f8-a940699adfcf}</Project>
+      <Name>HostService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

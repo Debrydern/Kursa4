@@ -42,10 +42,20 @@
   <wsdl:message name="IHostService1_GetRowById_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetRowByIdResponse" />
   </wsdl:message>
+  <wsdl:message name="IHostService1_FindByLastName_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindByLastName" />
+  </wsdl:message>
+  <wsdl:message name="IHostService1_FindByLastName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindByLastNameResponse" />
+  </wsdl:message>
   <wsdl:portType name="IHostService1">
     <wsdl:operation name="GetRowById">
       <wsdl:input wsaw:Action="http://tempuri.org/IHostService1/GetRowById" message="tns:IHostService1_GetRowById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IHostService1/GetRowByIdResponse" message="tns:IHostService1_GetRowById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindByLastName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHostService1/FindByLastName" message="tns:IHostService1_FindByLastName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHostService1/FindByLastNameResponse" message="tns:IHostService1_FindByLastName_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IHostService1" type="tns:IHostService1">
@@ -59,12 +69,30 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="FindByLastName">
+      <soap:operation soapAction="http://tempuri.org/IHostService1/FindByLastName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="NetTcpBinding_IHostService1" type="tns:IHostService1">
     <wsp:PolicyReference URI="#NetTcpBinding_IHostService1_policy" />
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
     <wsdl:operation name="GetRowById">
       <soap12:operation soapAction="http://tempuri.org/IHostService1/GetRowById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindByLastName">
+      <soap12:operation soapAction="http://tempuri.org/IHostService1/FindByLastName" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

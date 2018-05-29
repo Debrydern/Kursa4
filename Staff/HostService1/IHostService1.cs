@@ -14,7 +14,10 @@ namespace HostService
     {
         [OperationContract]
         GetShortInfo GetRowById(int id);
-        
+
+        [OperationContract]
+        GetShortInfo[] FindByLastName(string name);
+
     }
 
     [DataContract]
@@ -29,4 +32,6 @@ namespace HostService
         [DataMember] public string Post;
 
     }    
+
+
 }

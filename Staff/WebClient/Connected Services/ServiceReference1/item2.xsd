@@ -18,4 +18,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="GetShortInfo" nillable="true" type="tns:GetShortInfo" />
+  <xs:complexType name="ArrayOfGetShortInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetShortInfo" type="tns:GetShortInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGetShortInfo" nillable="true" type="tns:ArrayOfGetShortInfo" />
 </xs:schema>
