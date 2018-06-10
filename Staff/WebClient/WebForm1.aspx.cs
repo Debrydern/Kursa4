@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Data;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using HostService;
+
 
 namespace WebClient
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        public HostService.GetShortInfo[] getShort;
+        public ServiceReference1.GetShortInfo[] getShort;
 
 
         protected void Page_Load(object sender, EventArgs e)

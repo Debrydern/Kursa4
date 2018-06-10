@@ -1,0 +1,16 @@
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\DBase\DBase.mdf
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\DBase\DBase_log.ldf
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\Server.exe.config
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\Server.exe
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\Server.pdb
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\HostService1.dll
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\HostService1.pdb
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Release\HostService1.dll.config
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.csprojAssemblyReference.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.MainForm.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.Properties.Resources.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.csproj.GenerateResource.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.csproj.CoreCompileInputs.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.csproj.CopyComplete
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.exe
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Release\Server.pdb

@@ -1,7 +1,6 @@
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\Server.exe.config
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\Server.exe
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\bin\Debug\Server.pdb
-D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Debug\Server.Form1.resources
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Debug\Server.Properties.Resources.resources
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Debug\Server.csproj.GenerateResource.cache
 D:\Dropbox\personal\Ucheba\Kursa4\Staff\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache

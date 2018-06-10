@@ -28,5 +28,17 @@ namespace Staff
             var myForm = new Find();
             myForm.Show();
         }
+
+        private void PostsBtn_Click(object sender, EventArgs e)
+        {
+            var myForm = new Post();
+            myForm.Show();
+        }
+
+        private void DepartamentBtn_Click(object sender, EventArgs e)
+        {
+            var myForm = new Departament();
+            myForm.Show();
+        }
     }
 }

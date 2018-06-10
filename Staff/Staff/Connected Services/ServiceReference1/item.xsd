@@ -10,12 +10,54 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="Age" type="xs:int" />
       <xs:element minOccurs="0" name="Birthday" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departament" type="xs:int" />
       <xs:element minOccurs="0" name="First_name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Last_name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Patronic_name" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Post" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Post" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="GetShortInfo" nillable="true" type="tns:GetShortInfo" />
+  <xs:complexType name="ArrayOfGetShortInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetShortInfo" type="tns:GetShortInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGetShortInfo" nillable="true" type="tns:ArrayOfGetShortInfo" />
+  <xs:complexType name="ArrayOfGetPosts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetPosts" type="tns:GetPosts" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGetPosts" nillable="true" type="tns:ArrayOfGetPosts" />
+  <xs:complexType name="GetPosts">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetPosts" nillable="true" type="tns:GetPosts" />
+  <xs:complexType name="ArrayOfGetDepartament">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetDepartament" type="tns:GetDepartament" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGetDepartament" nillable="true" type="tns:ArrayOfGetDepartament" />
+  <xs:complexType name="GetDepartament">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDepartament" nillable="true" type="tns:GetDepartament" />
 </xs:schema>

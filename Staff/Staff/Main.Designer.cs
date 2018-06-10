@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DepartamentBtn = new System.Windows.Forms.Button();
+            this.PostsBtn = new System.Windows.Forms.Button();
             this.SearchBtn = new System.Windows.Forms.Button();
             this.FillBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -37,6 +39,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.DepartamentBtn);
+            this.groupBox1.Controls.Add(this.PostsBtn);
             this.groupBox1.Controls.Add(this.SearchBtn);
             this.groupBox1.Controls.Add(this.FillBtn);
             this.groupBox1.Location = new System.Drawing.Point(14, 14);
@@ -47,6 +51,28 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Меню";
+            // 
+            // DepartamentBtn
+            // 
+            this.DepartamentBtn.AutoEllipsis = true;
+            this.DepartamentBtn.Location = new System.Drawing.Point(407, 263);
+            this.DepartamentBtn.Name = "DepartamentBtn";
+            this.DepartamentBtn.Size = new System.Drawing.Size(342, 151);
+            this.DepartamentBtn.TabIndex = 2;
+            this.DepartamentBtn.Text = "Додати відділ";
+            this.DepartamentBtn.UseVisualStyleBackColor = true;
+            this.DepartamentBtn.Click += new System.EventHandler(this.DepartamentBtn_Click);
+            // 
+            // PostsBtn
+            // 
+            this.PostsBtn.AutoEllipsis = true;
+            this.PostsBtn.Location = new System.Drawing.Point(26, 263);
+            this.PostsBtn.Name = "PostsBtn";
+            this.PostsBtn.Size = new System.Drawing.Size(342, 151);
+            this.PostsBtn.TabIndex = 1;
+            this.PostsBtn.Text = "Додати посаду";
+            this.PostsBtn.UseVisualStyleBackColor = true;
+            this.PostsBtn.Click += new System.EventHandler(this.PostsBtn_Click);
             // 
             // SearchBtn
             // 
@@ -93,6 +119,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button SearchBtn;
         private System.Windows.Forms.Button FillBtn;
+        private System.Windows.Forms.Button DepartamentBtn;
+        private System.Windows.Forms.Button PostsBtn;
     }
 }
 

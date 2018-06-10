@@ -1,0 +1,13 @@
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Release\Staff.exe.config
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Release\Staff.exe
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\bin\Release\Staff.pdb
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.Create.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.Departament.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.Find.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.Main.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.Post.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.Properties.Resources.resources
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Client.csproj.GenerateResource.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Client.csproj.CoreCompileInputs.cache
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.exe
+D:\Dropbox\personal\Ucheba\Kursa4\Staff\Staff\obj\Release\Staff.pdb

@@ -29,7 +29,7 @@ namespace Staff.ServiceReference1 {
         private System.DateTime BirthdayField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DepartmentField;
+        private int DepartamentField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string First_nameField;
@@ -41,7 +41,7 @@ namespace Staff.ServiceReference1 {
         private string Patronic_nameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PostField;
+        private int PostField;
         
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -79,14 +79,14 @@ namespace Staff.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Department {
+        public int Departament {
             get {
-                return this.DepartmentField;
+                return this.DepartamentField;
             }
             set {
-                if ((object.ReferenceEquals(this.DepartmentField, value) != true)) {
-                    this.DepartmentField = value;
-                    this.RaisePropertyChanged("Department");
+                if ((this.DepartamentField.Equals(value) != true)) {
+                    this.DepartamentField = value;
+                    this.RaisePropertyChanged("Departament");
                 }
             }
         }
@@ -131,14 +131,134 @@ namespace Staff.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Post {
+        public int Post {
             get {
                 return this.PostField;
             }
             set {
-                if ((object.ReferenceEquals(this.PostField, value) != true)) {
+                if ((this.PostField.Equals(value) != true)) {
                     this.PostField = value;
                     this.RaisePropertyChanged("Post");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetPosts", Namespace="http://schemas.datacontract.org/2004/07/HostService")]
+    [System.SerializableAttribute()]
+    public partial struct GetPosts : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetDepartament", Namespace="http://schemas.datacontract.org/2004/07/HostService")]
+    [System.SerializableAttribute()]
+    public partial struct GetDepartament : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
                 }
             }
         }
@@ -162,6 +282,42 @@ namespace Staff.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/GetRowById", ReplyAction="http://tempuri.org/IHostService1/GetRowByIdResponse")]
         System.Threading.Tasks.Task<Staff.ServiceReference1.GetShortInfo> GetRowByIdAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/FindByLastName", ReplyAction="http://tempuri.org/IHostService1/FindByLastNameResponse")]
+        Staff.ServiceReference1.GetShortInfo[] FindByLastName(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/FindByLastName", ReplyAction="http://tempuri.org/IHostService1/FindByLastNameResponse")]
+        System.Threading.Tasks.Task<Staff.ServiceReference1.GetShortInfo[]> FindByLastNameAsync(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/AddNewPerson", ReplyAction="http://tempuri.org/IHostService1/AddNewPersonResponse")]
+        void AddNewPerson(Staff.ServiceReference1.GetShortInfo info);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/AddNewPerson", ReplyAction="http://tempuri.org/IHostService1/AddNewPersonResponse")]
+        System.Threading.Tasks.Task AddNewPersonAsync(Staff.ServiceReference1.GetShortInfo info);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/GetPostsList", ReplyAction="http://tempuri.org/IHostService1/GetPostsListResponse")]
+        Staff.ServiceReference1.GetPosts[] GetPostsList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/GetPostsList", ReplyAction="http://tempuri.org/IHostService1/GetPostsListResponse")]
+        System.Threading.Tasks.Task<Staff.ServiceReference1.GetPosts[]> GetPostsListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/GetDepartamentsList", ReplyAction="http://tempuri.org/IHostService1/GetDepartamentsListResponse")]
+        Staff.ServiceReference1.GetDepartament[] GetDepartamentsList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/GetDepartamentsList", ReplyAction="http://tempuri.org/IHostService1/GetDepartamentsListResponse")]
+        System.Threading.Tasks.Task<Staff.ServiceReference1.GetDepartament[]> GetDepartamentsListAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/AddNewPost", ReplyAction="http://tempuri.org/IHostService1/AddNewPostResponse")]
+        void AddNewPost(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/AddNewPost", ReplyAction="http://tempuri.org/IHostService1/AddNewPostResponse")]
+        System.Threading.Tasks.Task AddNewPostAsync(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/AddNewDepartament", ReplyAction="http://tempuri.org/IHostService1/AddNewDepartamentResponse")]
+        void AddNewDepartament(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHostService1/AddNewDepartament", ReplyAction="http://tempuri.org/IHostService1/AddNewDepartamentResponse")]
+        System.Threading.Tasks.Task AddNewDepartamentAsync(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -197,6 +353,54 @@ namespace Staff.ServiceReference1 {
         
         public System.Threading.Tasks.Task<Staff.ServiceReference1.GetShortInfo> GetRowByIdAsync(int id) {
             return base.Channel.GetRowByIdAsync(id);
+        }
+        
+        public Staff.ServiceReference1.GetShortInfo[] FindByLastName(string name) {
+            return base.Channel.FindByLastName(name);
+        }
+        
+        public System.Threading.Tasks.Task<Staff.ServiceReference1.GetShortInfo[]> FindByLastNameAsync(string name) {
+            return base.Channel.FindByLastNameAsync(name);
+        }
+        
+        public void AddNewPerson(Staff.ServiceReference1.GetShortInfo info) {
+            base.Channel.AddNewPerson(info);
+        }
+        
+        public System.Threading.Tasks.Task AddNewPersonAsync(Staff.ServiceReference1.GetShortInfo info) {
+            return base.Channel.AddNewPersonAsync(info);
+        }
+        
+        public Staff.ServiceReference1.GetPosts[] GetPostsList() {
+            return base.Channel.GetPostsList();
+        }
+        
+        public System.Threading.Tasks.Task<Staff.ServiceReference1.GetPosts[]> GetPostsListAsync() {
+            return base.Channel.GetPostsListAsync();
+        }
+        
+        public Staff.ServiceReference1.GetDepartament[] GetDepartamentsList() {
+            return base.Channel.GetDepartamentsList();
+        }
+        
+        public System.Threading.Tasks.Task<Staff.ServiceReference1.GetDepartament[]> GetDepartamentsListAsync() {
+            return base.Channel.GetDepartamentsListAsync();
+        }
+        
+        public void AddNewPost(string name) {
+            base.Channel.AddNewPost(name);
+        }
+        
+        public System.Threading.Tasks.Task AddNewPostAsync(string name) {
+            return base.Channel.AddNewPostAsync(name);
+        }
+        
+        public void AddNewDepartament(string name) {
+            base.Channel.AddNewDepartament(name);
+        }
+        
+        public System.Threading.Tasks.Task AddNewDepartamentAsync(string name) {
+            return base.Channel.AddNewDepartamentAsync(name);
         }
     }
 }

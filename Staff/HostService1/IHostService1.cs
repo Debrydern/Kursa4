@@ -18,6 +18,20 @@ namespace HostService
         [OperationContract]
         GetShortInfo[] FindByLastName(string name);
 
+        [OperationContract]
+        void AddNewPerson(GetShortInfo info);
+
+        [OperationContract]
+        GetPosts[] GetPostsList();
+
+        [OperationContract]
+        GetDepartament[] GetDepartamentsList();
+
+        [OperationContract]
+        void AddNewPost(string name);
+
+        [OperationContract]
+        void AddNewDepartament(string name);
     }
 
     [DataContract]
@@ -28,10 +42,22 @@ namespace HostService
         [DataMember] public string Patronic_name;
         [DataMember] public DateTime Birthday;
         [DataMember] public int Age;
-        [DataMember] public string Department;
-        [DataMember] public string Post;
+        [DataMember] public int Departament;
+        [DataMember] public int Post;
 
     }    
 
+    [DataContract]
+    public struct GetPosts
+    {
+        [DataMember] public int Id;
+        [DataMember] public string Name;
+    }
 
+    [DataContract]
+    public struct GetDepartament
+    {
+        [DataMember] public int Id;
+        [DataMember] public string Name;
+    }
 }

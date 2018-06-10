@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
-    <h3>Перпсональные данные сотрудников:</h3>
+    <h3>Персональные данные сотрудников:</h3>
     
     <form id="form1" runat="server">
         <div id="table_row">
@@ -45,12 +45,13 @@
             <td><%=getShort[i].Age %></td>
             <td><%=getShort[i].Birthday.ToShortDateString() %></td>
             <td><%=getShort[i].Post %></td>
-            <td><%=getShort[i].Department %></td>
+            <td><%=getShort[i].Departament %></td>
         </tr>
         <%      }
           } %>
        
         </table>
+    
            
    
 </body>
